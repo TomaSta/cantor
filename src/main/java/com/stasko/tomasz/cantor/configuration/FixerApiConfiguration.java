@@ -17,8 +17,7 @@ public class FixerApiConfiguration {
     @Bean
     public WebClient getFixerWebClient(WebClient.Builder webClientBuilder) {
         return webClientBuilder
-//                .baseUrl("https://api.apilayer.com/fixer")
-                .baseUrl("http://localhost:8089/fixer")
+                .baseUrl("https://api.apilayer.com/fixer")
                 .defaultHeader("apikey", apiKey)
                 .build();
     }
